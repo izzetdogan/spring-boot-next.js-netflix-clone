@@ -1,0 +1,87 @@
+.contentInput {
+  width: 80%;
+  padding: 0px 0px;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.addContentForm {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addContentItem {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.addContentItem > label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(151, 150, 150);
+}
+
+.addContentSelect {
+  height: 40px;
+  border-radius: 5px;
+}
+
+.newContent {
+  flex: 4;
+}
+
+.addContentItem > input {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.addContentItem > select {
+  padding: 10px;
+}
+
+.addContentButton {
+  height: 30px;
+  width: 200px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+}
+.formRight {
+  margin-left: 200px;
+}
+
+/* -----------------------------------------*/
+
+.contentMovie {
+  margin-top: 30px;
+}
+.contentMovie h2 {
+  color: gray;
+}
+
+.genre {
+  border: 1px solid gray;
+  border-radius: 1rem;
+  width: 400px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+.genreItem {
+  width: 125px;
+  float: left;
+}
