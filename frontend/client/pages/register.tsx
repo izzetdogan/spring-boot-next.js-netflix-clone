@@ -55,11 +55,6 @@ const Register: NextPage = () => {
   return (
     <div className="relative flex h-screen w-screen flex-col md:items-center md:justify-center md:bg-transparent">
       <Head>
-        <meta
-          http-equiv="Content-Security-Policy"
-          content="upgrade-insecure-requests"
-        />
-
         <title>NetFlix-Register</title>
       </Head>
       <Image

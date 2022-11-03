@@ -54,10 +54,6 @@ const Home = ({ posterMovie, genreList }: IProps) => {
     <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[95vh]  ">
       <Head>
         <title>NetFlix{currentType === "" ? "" : "-" + currentType}</title>
-        <meta
-          http-equiv="Content-Security-Policy"
-          content="upgrade-insecure-requests"
-        />
       </Head>
       <Navbar />
 
