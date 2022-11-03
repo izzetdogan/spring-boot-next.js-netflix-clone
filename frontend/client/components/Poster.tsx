@@ -39,7 +39,7 @@ const Poster = ({ posterMovie, genreList }: IProps) => {
           </select>
         </div>
       )}
-      <div className="flex flex-col border-2  space-y-4 py-10 md:space-py-4 lg:h-[65vh] lg:justify-end lg:pb-12">
+      <div className="flex flex-col   space-y-4 py-10 md:space-py-4 lg:h-[65vh] lg:justify-end lg:pb-12">
         <div className="absolute  top-0 left-0 -z-10 h-[95vh] ">
           <img src={posterMovie.movieImage} className="h-[95vh] w-[100vw]" />
           {/*<Image src={posterMovie.movieImage} layout="fill" />*/}
