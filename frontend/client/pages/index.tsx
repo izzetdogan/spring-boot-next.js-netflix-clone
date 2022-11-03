@@ -23,12 +23,6 @@ const Home = ({ posterMovie, genreList }: IProps) => {
   //const findCurrentGenre =currentGenre?.currentGenre === null ? "" : currentGenre?.currentGenre;
 
   useEffect(() => {
-    if (state?.state == null) {
-      router.push("/login");
-    }
-  }, []);
-
-  useEffect(() => {
     const getListe = async () => {
       try {
         const res = await axios.get(
@@ -43,10 +37,27 @@ const Home = ({ posterMovie, genreList }: IProps) => {
   }, [currentType, currentGenre?.currentGenre]);
   console.log("state,", state);
 
+  const handleLoginPage = () => {
+    if (typeof window !== "undefined") {
+      router.replace("/login");
+    }
+  };
+  if (state?.state == null) {
+    return (
+      <>
+        <div>Goto Login </div>
+        {handleLoginPage()}
+      </>
+    );
+  }
   return (
     <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[95vh]  ">
       <Head>
         <title>NetFlix{currentType === "" ? "" : "-" + currentType}</title>
+        <meta
+          http-equiv="Content-Security-Policy"
+          content="upgrade-insecure-requests"
+        />
       </Head>
       <Navbar />
 

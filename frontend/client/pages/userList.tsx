@@ -37,6 +37,10 @@ const UserList: NextPage = () => {
     <>
       <Head>
         <title>NetFlix-My-List</title>
+        <meta
+          http-equiv="Content-Security-Policy"
+          content="upgrade-insecure-requests"
+        />
       </Head>
       <Navbar />{" "}
       <div className=" flex flex-col ml-[2%] mt-[10%] z-20 w-[50%] gap-5">

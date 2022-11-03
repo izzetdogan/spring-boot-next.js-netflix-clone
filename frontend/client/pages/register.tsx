@@ -56,6 +56,10 @@ const Register: NextPage = () => {
     <div className="relative flex h-screen w-screen flex-col md:items-center md:justify-center md:bg-transparent">
       <Head>
         <title>NetFlix-Register</title>
+        <meta
+          http-equiv="Content-Security-Policy"
+          content="upgrade-insecure-requests"
+        />
       </Head>
       <Image
         src="https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/bd4f2024-8853-47ee-b84b-779b52fd5f12/TR-tr-20221017-popsignuptwoweeks-perspective_alpha_website_small.jpg"
