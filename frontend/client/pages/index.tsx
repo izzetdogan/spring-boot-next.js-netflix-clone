@@ -38,11 +38,7 @@ const Home = ({ posterMovie, genreList }: IProps) => {
   console.log("state,", state);
 
   if (state?.state == null) {
-    return (
-      <>
-        <div>Goto Login </div>
-      </>
-    );
+    router.push("/login");
   }
   return (
     <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[95vh]  ">
