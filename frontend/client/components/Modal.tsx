@@ -41,16 +41,15 @@ export default function BasicModal({ movie }: IProps) {
                 <div>
                   {" "}
                   <span className="text-[gray]">Genre: </span>
-                  {movie.genres.map((g: Genre) => (
-                    <span>{g.genre} </span>
-                  ))}
+                  {movie.genres &&
+                    movie.genres.map((g: Genre) => <span>{g.genre} </span>)}
                 </div>
-                {movie.year.year == null ? (
+                {movie.year && movie.year.year == null ? (
                   ""
                 ) : (
                   <h1>
                     <span className="text-[gray]">Year: </span>{" "}
-                    {movie.year.year}
+                    {movie.year && movie.year.year}
                   </h1>
                 )}
               </div>

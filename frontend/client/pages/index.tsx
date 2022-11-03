@@ -23,6 +23,12 @@ const Home = ({ posterMovie, genreList }: IProps) => {
   //const findCurrentGenre =currentGenre?.currentGenre === null ? "" : currentGenre?.currentGenre;
 
   useEffect(() => {
+    if (state?.state == null) {
+      router.push("/login");
+    }
+  }, []);
+
+  useEffect(() => {
     const getListe = async () => {
       try {
         const res = await axios.get(
@@ -37,9 +43,6 @@ const Home = ({ posterMovie, genreList }: IProps) => {
   }, [currentType, currentGenre?.currentGenre]);
   console.log("state,", state);
 
-  if (state?.state == null) {
-    router.push("/login");
-  }
   return (
     <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[95vh]  ">
       <Head>
