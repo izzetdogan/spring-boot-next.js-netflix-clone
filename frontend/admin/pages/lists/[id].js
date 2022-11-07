@@ -22,7 +22,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getServerSideProps({ params }) {
+export async function getStaticProps({ params }) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API}/lists/${params.id}`);
   const list = await res.json();
   return {

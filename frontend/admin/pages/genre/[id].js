@@ -51,7 +51,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getServerSideProps({ params }) {
+export async function getStaticProps({ params }) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API}/genre/${params.id}`);
   const genre = await res.json();
   return {

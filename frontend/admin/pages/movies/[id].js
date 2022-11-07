@@ -152,7 +152,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getServerSideProps({ params }) {
+export async function getStaticProps({ params }) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API}/movies/${params.id}`);
   const movie = await res.json();
   return {
