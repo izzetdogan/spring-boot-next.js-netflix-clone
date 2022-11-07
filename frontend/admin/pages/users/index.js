@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { DeleteOutlineOutlined } from "@mui/icons-material";
 import Link from "next/link";
 import styles from "./user.module.css";

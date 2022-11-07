@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react-hooks/exhaustive-deps */
 import styles from "./movie.module.css";
 import { useState, useEffect } from "react";
 import MovieForm from "../../components/forms/movieForm";
