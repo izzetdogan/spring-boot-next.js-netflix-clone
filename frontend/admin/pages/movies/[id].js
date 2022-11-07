@@ -92,7 +92,9 @@ export default function Movie({ movie }) {
                 Genre:{" "}
                 {editMovie &&
                   editMovie.genres &&
-                  editMovie.genres.map(genre => <span>-{genre.genre}</span>)}
+                  editMovie.genres.map(genre => (
+                    <span key={genre.id}>-{genre.genre}</span>
+                  ))}
               </span>
             </div>
             <div className={styles.userShowInfo}>
