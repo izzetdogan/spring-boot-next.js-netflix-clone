@@ -3,20 +3,32 @@ import { useState, useEffect } from "react";
 import MovieForm from "../../components/forms/movieForm";
 import axios from "axios";
 import { toast } from "react-toastify";
-export default function Movie({ movie }) {
+import { useRouter } from "next/router";
+export default function Movie() {
   const [checkControl, setChecked] = useState([]);
-  const [updateMovie, setUpdateMovie] = useState(movie);
-  const [editMovie, setEditMovie] = useState(movie);
+  const [updateMovie, setUpdateMovie] = useState({});
+  const [editMovie, setEditMovie] = useState({});
   const [edited, setEdited] = useState(0);
   const [isChecked, setIsChecked] = useState(false);
+  const [movie, setMovie] = useState({});
+  const router = useRouter();
 
   useEffect(() => {
-    getMovie();
+    console.log("dhdhdhd", router.query.id);
+    const getMoviee = async () => {
+      try {
+        const res = await axios.get(`movies/${router.query.id}`);
+        setMovie(res.data);
+        setEditMovie(res.data);
+        setUpdateMovie(res.data);
+        console.log("sdjckldvc", res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    getMoviee();
   }, [edited]);
 
-  const getMovie = () => {
-    setEditMovie(updateMovie);
-  };
   const handleChange = async e => {
     const value = e.target.value;
     setUpdateMovie({ ...updateMovie, [e.target.name]: value });
@@ -134,30 +146,4 @@ export default function Movie({ movie }) {
       </div>
     </div>
   );
-}
-
-export async function getStaticPaths() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API}/movies`);
-  const movies = await res.json();
-  const paths = movies.map(movie => {
-    return {
-      params: {
-        id: movie.id.toString(),
-      },
-    };
-  });
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-export async function getStaticProps({ params }) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API}/movies/${params.id}`);
-  const movie = await res.json();
-  return {
-    props: {
-      movie,
-    },
-  };
 }
