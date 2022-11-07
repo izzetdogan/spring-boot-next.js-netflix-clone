@@ -65,7 +65,7 @@ export default function Movie({ movies }) {
       renderCell: params => {
         return (
           <>
-            <Link href={`/movies/${params.row.id}`} key={params.row.id}>
+            <Link href={"/movies/" + params.row.id}>
               <button className={styles.movieListEdit}>Edit</button>
             </Link>
             <DeleteOutline
