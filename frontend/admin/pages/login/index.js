@@ -44,7 +44,7 @@ export default function Login() {
           <h3>
             email: admin@gmail.com
             <br />
-            password: admin4897
+            password: admin6287
           </h3>
         </div>
         <input

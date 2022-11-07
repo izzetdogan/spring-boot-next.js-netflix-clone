@@ -101,7 +101,7 @@ export default function User({ user }) {
   );
 }
 
-export async function getStaticPath() {
+export async function getStaticPaths() {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API}/users?newUsers=false`
   );

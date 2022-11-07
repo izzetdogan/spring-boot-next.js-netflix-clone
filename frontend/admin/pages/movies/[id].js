@@ -134,7 +134,7 @@ export default function Movie({ movie }) {
   );
 }
 
-export async function getStaticPath() {
+export async function getStaticPaths() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API}/movies`);
   const movies = await res.json();
   const paths = movies.map(movie => {

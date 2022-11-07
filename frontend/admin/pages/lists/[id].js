@@ -6,7 +6,7 @@ const EditList = ({ list }) => {
   return <DataList lists={list} />;
 };
 
-export async function getStaticPath() {
+export async function getStaticPaths() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API}/lists`);
   const lists = await res.json();
   const paths = lists.map(list => {

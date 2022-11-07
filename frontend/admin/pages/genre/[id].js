@@ -35,7 +35,7 @@ export default function GenreEdit({ genre }) {
   );
 }
 
-export async function getStaticPath() {
+export async function getStaticPaths() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API}/genre`);
   const genres = await res.json();
   const paths = genres.map(genre => {
