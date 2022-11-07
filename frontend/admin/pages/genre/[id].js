@@ -41,7 +41,7 @@ export async function getStaticPaths() {
   const paths = genres.map(genre => {
     return {
       params: {
-        id: genre.id,
+        id: genre.id.toString(),
       },
     };
   });

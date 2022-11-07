@@ -109,7 +109,7 @@ export async function getStaticPaths() {
   const paths = users.map(user => {
     return {
       params: {
-        id: user.id,
+        id: user.id.toString(),
       },
     };
   });

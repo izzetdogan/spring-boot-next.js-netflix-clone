@@ -12,7 +12,7 @@ export async function getStaticPaths() {
   const paths = lists.map(list => {
     return {
       params: {
-        id: list.id,
+        id: list.id.toString(),
       },
     };
   });

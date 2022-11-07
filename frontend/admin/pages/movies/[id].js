@@ -142,7 +142,7 @@ export async function getStaticPaths() {
   const paths = movies.map(movie => {
     return {
       params: {
-        id: movie.id,
+        id: movie.id.toString(),
       },
     };
   });
