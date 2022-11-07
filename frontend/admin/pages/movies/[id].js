@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import MovieForm from "../../components/forms/movieForm";
 import axios from "axios";
 import { toast } from "react-toastify";
-
 export default function Movie({ movie }) {
   const [checkControl, setChecked] = useState([]);
   const [updateMovie, setUpdateMovie] = useState(movie);
@@ -143,7 +142,7 @@ export async function getStaticPaths() {
   const paths = movies.map(movie => {
     return {
       params: {
-        id: movie.id,
+        id: movie.id.toString(),
       },
     };
   });
