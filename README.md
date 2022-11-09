@@ -19,4 +19,16 @@ A Netflix-Clone project by SpringBoot &amp; Next.js
 <li>Aws s3 for media uploading</li>
 <li>Mysql</li>
 <li>OpenApi swagger </li>
+<li>docker</li>
 </ul>
+
+ ## Er Diagram
+ 
+ 
+ ![](images/er.png)
+
+## images
+![](images/6.png)
+![](images/11.png)
+![](images/2.png)
+![](images/4.png)
