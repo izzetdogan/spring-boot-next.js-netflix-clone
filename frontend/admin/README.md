@@ -2,6 +2,8 @@
 
 This is a Next.js project 
 
+### <b>Live Admin-Page</b> : <a href="https://spring-boot-next-js-netflix-clone-erkt.vercel.app/login"> admin-page</a><br/>
+
 Admin will be able to do:  <b> Add- Edit-Delete:
 <ul>
   <li>Movie</li>
@@ -10,7 +12,6 @@ Admin will be able to do:  <b> Add- Edit-Delete:
   <li>List for movies</li>
 </ul>
 
-<b>Live Admin-Page</b> : <a href="https://spring-boot-next-js-netflix-clone-erkt.vercel.app/login"> admin-page</a><br/>
 
 ## Getting Started
 
