@@ -15,6 +15,13 @@ Admin will be able to do:  <b> Add- Edit-Delete:
   <li>List for movies</li>
 </ul>
 
+### images
+![](images/2.png)
+![](images/3.png)
+![](images/4.png)
+![](images/1.png)
+
+
 
 ## Getting Started
 
