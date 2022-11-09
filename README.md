@@ -30,5 +30,5 @@ A Netflix-Clone project by SpringBoot &amp; Next.js
 ## images
 ![](images/6.png)
 ![](images/11.png)
-![](images/2.png)
+![](images/2.jpg)
 ![](images/4.png)
