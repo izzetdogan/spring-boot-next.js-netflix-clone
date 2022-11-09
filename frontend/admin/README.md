@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Admin Page
+
+This is a Next.js project 
+
+Admin will be able to do:  <b> Add- Edit-Delete:
+<ul>
+  <li>Movie</li>
+  <li>Genre</li>
+  <li>User</li>
+  <li>List for movies</li>
+</ul>
 
 <b>Live Admin-Page</b> : <a href="https://spring-boot-next-js-netflix-clone-erkt.vercel.app/login"> admin-page</a><br/>
 
