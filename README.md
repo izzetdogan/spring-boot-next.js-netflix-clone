@@ -1,6 +1,9 @@
 # spring-boot-next.js-netflix-clone
 A Netflix-Clone project by SpringBoot &amp; Next.js
 
+Live website : <a href="https://spring-boot-next-js-netflix-clone.vercel.app/login">netflix-clone</a>
+Admin page :  <a href="https://spring-boot-next-js-netflix-clone-erkt.vercel.app/login">Admin-Page</a>
+
 ## Frontend
 <ul>
 <li>Next.js </li>
