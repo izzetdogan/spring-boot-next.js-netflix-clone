@@ -1,8 +1,14 @@
-# Next.js + Tailwind + TypeScript
+# Next.js + TypeScript + Tailwind.css
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is a netlix-clone project
 
-
+## images
+![](images/6.png)
+![](images/1.png)
+![](images/2.png)
+![](images/3.png)
+![](images/4.png)
+![](images/5.png)
 
 ## How to use
 
