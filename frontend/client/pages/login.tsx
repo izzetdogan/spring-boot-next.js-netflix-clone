@@ -76,7 +76,7 @@ const Login: NextPage = () => {
           <label className="inline-block w-full">
             <input
               type="email"
-              placeholder="Email"
+              placeholder="admin@gmail.com"
               className="w-full rounded bg-[#333333] px-5 py-3.5 placeholder-[gray] outline-none focus:bg-[#454545];"
               onChange={e => setEmail(e.target.value)}
             />
@@ -84,7 +84,7 @@ const Login: NextPage = () => {
           <label className="inline-block w-full">
             <input
               type="password"
-              placeholder="Password"
+              placeholder="admin6287"
               className="w-full rounded bg-[#333333] px-5 py-3.5 placeholder-[gray] outline-none focus:bg-[#454545];"
               onChange={e => setPassword(e.target.value)}
             />
